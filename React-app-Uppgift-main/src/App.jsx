@@ -2,8 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import Header from './components/Header'
-import PostList from './components/PostList' // <-- import PostList
-import TagList from './components/TagList' // <-- import TagList
+import PostList from './components/PostList' 
+import TagList from './components/TagList' 
 
 import Home from './pages/Home'
 import About from './pages/About'
