@@ -1,0 +1,55 @@
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+.navbar .brand {
+  font-weight: bold;
+}
+.hamburger {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: #333;
+    left: 0;
+    right: 0;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+}
+.navbar .nav-links.open {
+  display: flex;
+}
+.navbar .nav-links li {
+  padding: 1rem;
+}
+.navbar .nav-links li:hover {
+  background-color: #444;
+}
+.navbar .nav-links li.active {
+  background-color: #555;
+}
+

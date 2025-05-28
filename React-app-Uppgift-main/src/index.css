@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f8f8f8;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.layout {
+  display: flex;
+  flex: 1;
+  background: #f8f8f8;
+}
+.content {
+  padding: 0 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.tag-button {
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+.tag-button:hover {
+  background: #6d28d9;
+  box-shadow: 0 6px 16px rgba(109,40,217,0.18);
+  transform: translateY(-2px) scale(1.04);
+}
